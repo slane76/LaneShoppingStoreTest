@@ -1,0 +1,102 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="Cs/Style.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+
+    @*<style>
+        @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Lobster|Lobster+Two|Pacifico&display=swap');
+    </style>*@
+</head>
+<body>
+    @*<section>
+        <div class="section1">
+            <img src="StoreImages/OnlineShopIcon1.jpg" class="logo" />
+            <div class="navigation">
+                <img src="StoreImages/MenuBurger.png" class="toggle" />
+                <a class="cgr">Departments</a>
+            </div>
+            <div>
+                <a class="submenu">Clothing, Footwear, Jewelry</a>
+                <a class="submenu">Movies, Music & Games</a>
+                <a class="submenu">Electronics, Computer & Office</a>
+                <a class="submenu">Home & Garden</a>
+                <a class="submenu">Toys</a>
+                <a class="submenu">Beauty & Health</a>
+                <a class="submenu">Sports & Outdoors</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="section2">
+            <input type="text" placeholder="Search" class="txtsrch" /><button type="button" class="btnsrch">Search</button>
+            <img src="StoreImages/CallIcon.png" class="call-icon" />
+            <span class="tel-no">254-368-7759</span>
+
+            <nav>
+                <a class="menuitem">Home</a>
+                <a class="menuitem">My Wishlist(0)</a>
+                <a class="menuitem">My Account</a>
+                <a class="menuitem">Shopping Cart</a>
+                <a class="menuitem">Checkout</a>
+                <a class="menuitem">Item(s)</a>
+            </nav>*@
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide1">
+                        <img src="StoreImages/SamsungGalaxyS10_1.jpg" class="img1" />
+                    </div>
+
+                    <div class="slide1">
+                        <img src="StoreImages/SamsungGalaxyS10_1.jpg" class="img2" />
+                    </div>
+
+
+
+                    <div class="constant">
+                        <h1>Samsung Galaxy S10</h1>
+                        <p>Meet the next generation of Samsung products. With a cinematic Infinity Display, Ultrasonic Fingerprint, Pro-grade Camera, and intelligent performance.</p>
+                        <a class="btnshopnow">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+
+        
+
+
+    
+
+    <script>
+
+        var $slides = $('.slides');
+        var $slide = $('.slide1');
+        var count = 1;
+
+        $(document).ready(function () {
+
+            setInterval.animate({ 'margin-left': '-=68vw' }, 1200, function () {
+
+                count++;
+                if (count === 4) {
+                    $slides.css("margin-left", 0);
+                    count = 1;
+                }
+
+            });
+        }, 4000);
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+﻿@model IEnumerable<LanesOnlineStore.Models.Category>
+
+@{
+    ViewBag.Title = "Store";
+}
+
+<h2>Browse Category</h2>
+<p>
+    Select From @Model.Count()
+    genres:
+</p>
+<div class="row">
+    <div class="col-3">
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            @foreach (var category in Model)
+            {
+                <a class="nav-link" href="@Url.Action("Browse", new { category = category.Name })">@category.Name</a>
+            }
+        </div>
+    </div>
+    <div class="col-9">
+        Rest of page content here
+    </div>
+</div>
