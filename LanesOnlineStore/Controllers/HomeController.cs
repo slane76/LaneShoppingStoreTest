@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using LanesOnlineStore.Models;
 
 namespace LanesOnlineStore.Controllers
 {
@@ -13,17 +14,38 @@ namespace LanesOnlineStore.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult ClothingFootwearJewelry()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult MoviesMusicGames()
         {
-            ViewBag.Message = "Your contact page.";
+            return View();
+        }
 
+        public ActionResult ElectronicsComputerOffice()
+        {
+            return View();
+        }
+
+        public ActionResult HomeGarden()
+        {
+            return View();
+        }
+
+        public ActionResult Toys()
+        {
+            return View();
+        }
+
+        public ActionResult BeautyHealth()
+        {
+            return View();
+        }
+
+        public ActionResult SportsOutdoors()
+        {
             return View();
         }
     }

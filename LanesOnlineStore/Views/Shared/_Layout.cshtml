@@ -1,106 +1,101 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - LanesOnlineStore</title>
+    <title>@ViewBag.Title - Shopping Express</title>
     @Styles.Render("~/Content/bootstrap.css")
     @Scripts.Render("~/bundles/modernizr")
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+    <style>
+        /* Remove the navbar's default rounded borders and increase the bottom margin */
+        .navbar {
+            margin-bottom: 50px;
+            border-radius: 0;
+        }
+
+        /* Remove the jumbotron's default bottom margin */
+        .jumbotron {
+            margin-bottom: 0;
+        }
+
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+    </style>
 </head>
 <body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
 
-    <div class="container row">
-        <div class="container col-sm-4">
-            <img src="/StoreImages/OnlineShopIcon1.jpg" style="width:150%;height:50%;" />
-        </div>
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">My Wishlist</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">My Account</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Shopping Cart(0)</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Checkout</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Item(s)</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact Us</a>
-            </li>
-        </ul>
-        <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"></div>
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"></div>
-            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"></div>
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"></div>
-            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"></div>
-            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"></div>
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"></div>
-            <div class="container col-sm-4 custom" style="width:25%;">
-                <input type="text" placeholder="Search" /><button type="button">Search</button>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
             </div>
-        </div>
 
+            <div class="collapse navbar-collapse fixed-top" style="background-color:black; position: absolute;" id="myNavbar">
 
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-    @*<div class="container row">
-            <div class="container col-sm-8">
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-item">Home</a>
+                <ul class="nav navbar-nav navbar-expand-sm">
+                    <li class="dropdown">
+                        <a class="dropdown" data-toggle="dropdown" href="#">
+                            Departments
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a>@Html.ActionLink("Clothing, Footwear & Jewelry", "ClothingFootwearJewelry", "Home")</a></li>
+                            <li><a>@Html.ActionLink("Beauty & Health", "BeautyHealth", "Home")</a></li>
+                            <li><a>@Html.ActionLink("Electronics, Computers & Office", "ElectronicsComputerOffice", "Home")</a></li>
+                            <li><a>@Html.ActionLink("Home & Garden", "HomeGarden", "Home")</a></li>
+                            <li><a>@Html.ActionLink("Sports & Outdoors", "SportsOutdoors", "Home")</a></li>
+                            <li><a>@Html.ActionLink("Toys", "Toys", "Home")</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-item">My Wishlist</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-item">My Account</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-item">Shopping Cart</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-item">Checkout</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-item">Item(s)</a>
-                    </li>
+
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Deals</a></li>
+                    <li><a href="#">Stores</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
+                <ul class="nav navbar-nav navbar-right navbar-expand-sm">
+                    <div class="topnav" style="padding-top: 10px">
+                        <input type="text" placeholder="Search.."  >
+                    </div>
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+                </ul>
+                
+
             </div>
-        </div>*@
 
 
+
+        </div>
+    </nav>
+
+
+    
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        <footer style="background-color: transparent; text-align:center;" >
+            <p>&copy; @DateTime.Now.Year - Shopping Express</p>
         </footer>
     </div>
+    
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
-
 
 </body>
 </html>
