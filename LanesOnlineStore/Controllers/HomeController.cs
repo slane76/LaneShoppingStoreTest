@@ -48,5 +48,30 @@ namespace LanesOnlineStore.Controllers
         {
             return View();
         }
+
+        public ActionResult ContactUs()
+        {
+            return View();
+        }
+
+        public ActionResult Home()
+        {
+            return View();
+        }
+
+        public ActionResult Products()
+        {
+            return View();
+        }
+
+        public ActionResult Deals()
+        {
+            return View();
+        }
+
+        public ActionResult Stores()
+        {
+            return View();
+        }
     }
 }

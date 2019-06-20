@@ -25,7 +25,7 @@
         /* Add a gray background color and some padding to the footer */
         footer {
             background-color: #f2f2f2;
-            padding: 25px;
+            padding: 0px;
         }
     </style>
 </head>
@@ -60,11 +60,13 @@
                         </ul>
                     </li>
 
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Deals</a></li>
-                    <li><a href="#">Stores</a></li>
-                    <li><a href="#">Contact</a></li>
+
+                    <li><a>@Html.ActionLink("Home", "Index", "Home")</a></li>
+                    <li><a>@Html.ActionLink("Products", "Products", "Home")</a></li>
+                    <li><a>@Html.ActionLink("Deals", "Deals", "Home")</a></li>
+                    <li><a>@Html.ActionLink("Stores", "Stores", "Home")</a></li>
+                    <li><a>@Html.ActionLink("Contact Us", "ContactUs", "Home")</a></li>
+
                 </ul>
                 <ul class="nav navbar-nav navbar-right navbar-expand-sm">
                     <div class="topnav" style="padding-top: 10px">
@@ -87,9 +89,18 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer style="background-color: transparent; text-align:center;" >
+
+        @*<footer class="container-fluid text-center">
+            <p>Shopping Express LLC</p>
+            <form class="form-inline">
+                Get deals:
+                <input type="email" class="form-control" size="50" placeholder="Email Address">
+                <button type="button" class="btn btn-danger">Sign Up</button>
+            </form>
+        </footer>*@
+        @*<footer style="background-color: transparent; text-align:center; padding-bottom: unset" >
             <p>&copy; @DateTime.Now.Year - Shopping Express</p>
-        </footer>
+        </footer>*@
     </div>
     
 
@@ -99,3 +110,6 @@
 
 </body>
 </html>
+
+
+
