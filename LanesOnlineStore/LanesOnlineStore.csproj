@@ -268,6 +268,8 @@
     <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="StoreImages\BeautyHealth\NailKit.jpg" />
     <Content Include="StoreImages\ClothingFootwearJewelry\AppleWatch.jpg" />
+    <Content Include="StoreImages\ElectronicsComputerOffice\SamsungGalaxyS10_1.png" />
+    <Content Include="StoreImages\ElectronicsComputerOffice\SamsungGalaxyS10_11.jpg" />
     <Content Include="StoreImages\HomeGarden\PatioSet.jpg" />
     <Content Include="StoreImages\StoreIcons\OnlineShopIcon.jpg" />
     <Content Include="StoreImages\StoreIcons\OnlineShopIcon1.jpg" />
