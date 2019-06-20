@@ -266,16 +266,14 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
-    <Content Include="StoreImages\CallIcon.png" />
-    <Content Include="StoreImages\CallUs.PNG" />
-    <Content Include="StoreImages\MenuBurger.png" />
-    <Content Include="StoreImages\OnlineShopIcon.jpg" />
-    <Content Include="StoreImages\OnlineShopIcon1.jpg" />
-    <Content Include="StoreImages\SamsungGalaxyS10.png" />
-    <Content Include="StoreImages\SamsungGalaxyS10Line.jpg" />
-    <Content Include="StoreImages\SamsungGalaxyS10Plus.jpg" />
-    <Content Include="StoreImages\SamsungGalaxyS10Plus2.jpg" />
-    <Content Include="StoreImages\SamsungGalaxyS10_1.jpg" />
+    <Content Include="StoreImages\BeautyHealth\NailKit.jpg" />
+    <Content Include="StoreImages\ClothingFootwearJewelry\AppleWatch.jpg" />
+    <Content Include="StoreImages\HomeGarden\PatioSet.jpg" />
+    <Content Include="StoreImages\StoreIcons\OnlineShopIcon.jpg" />
+    <Content Include="StoreImages\StoreIcons\OnlineShopIcon1.jpg" />
+    <Content Include="StoreImages\ElectronicsComputerOffice\SamsungGalaxyS10.png" />
+    <Content Include="StoreImages\ElectronicsComputerOffice\SamsungGalaxyS10Line.jpg" />
+    <Content Include="StoreImages\ElectronicsComputerOffice\SamsungGalaxyS10_1.jpg" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -312,6 +310,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="StoreImages\SportsOutdoors\" />
+    <Folder Include="StoreImages\Toys\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
