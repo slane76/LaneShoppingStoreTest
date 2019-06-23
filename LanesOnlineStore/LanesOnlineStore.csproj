@@ -268,14 +268,25 @@
     <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="StoreImages\BeautyHealth\NailKit.jpg" />
     <Content Include="StoreImages\ClothingFootwearJewelry\AppleWatch.jpg" />
-    <Content Include="StoreImages\ElectronicsComputerOffice\SamsungGalaxyS10_1.png" />
+    <Content Include="StoreImages\ElectronicsComputerOffice\GamingChair.png" />
+    <Content Include="StoreImages\ElectronicsComputerOffice\HPSpectre.jpg" />
+    <Content Include="StoreImages\ElectronicsComputerOffice\IntelCorei9Processor.jpg" />
+    <Content Include="StoreImages\ElectronicsComputerOffice\PioneerCarSterio.jpg" />
     <Content Include="StoreImages\ElectronicsComputerOffice\SamsungGalaxyS10_11.jpg" />
+    <Content Include="StoreImages\ElectronicsComputerOffice\Sony85inchTV.jpg" />
+    <Content Include="StoreImages\ElectronicsComputerOffice\VRGamingHeadset128GB.jpg" />
     <Content Include="StoreImages\HomeGarden\PatioSet.jpg" />
+    <Content Include="StoreImages\SportsOutdoors\9mmShield.jpg" />
+    <Content Include="StoreImages\SportsOutdoors\S&amp;WSD40.jpg" />
     <Content Include="StoreImages\StoreIcons\OnlineShopIcon.jpg" />
     <Content Include="StoreImages\StoreIcons\OnlineShopIcon1.jpg" />
-    <Content Include="StoreImages\ElectronicsComputerOffice\SamsungGalaxyS10.png" />
     <Content Include="StoreImages\ElectronicsComputerOffice\SamsungGalaxyS10Line.jpg" />
     <Content Include="StoreImages\ElectronicsComputerOffice\SamsungGalaxyS10_1.jpg" />
+    <Content Include="StoreImages\StoreIcons\Shopping Express Logo.png" />
+    <Content Include="StoreImages\Toys\BuzzLightyear.jpg" />
+    <Content Include="StoreImages\Toys\BuzzLightyear_1.jpg" />
+    <Content Include="StoreImages\Toys\Thanos.jpg" />
+    <Content Include="StoreImages\Toys\Woody.jpg" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -312,8 +323,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="StoreImages\SportsOutdoors\" />
-    <Folder Include="StoreImages\Toys\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

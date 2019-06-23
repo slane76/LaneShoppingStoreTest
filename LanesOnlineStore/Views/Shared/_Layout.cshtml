@@ -9,8 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-
-    <style>
+        <style >
         /* Remove the navbar's default rounded borders and increase the bottom margin */
         .navbar {
             margin-bottom: 50px;
@@ -60,7 +59,7 @@
                         </ul>
                     </li>
 
-                    
+
                     <ul class="nav navbar-nav">
                         <li>@Html.ActionLink("Home", "Index", "Home")</li>
                         <li>@Html.ActionLink("Products", "Products", "Home")</li>
@@ -71,39 +70,53 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right navbar-expand-sm">
                     <div class="topnav" style="padding-top: 10px">
-                        <input type="text" placeholder="Search.."  >
+                        <input type="text" placeholder="Search..">
                     </div>
                     <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
                     <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
                 </ul>
-                
+
 
             </div>
 
-
+            @*<div class="container text-center" style="position:center; padding-bottom: 15%">
+                <div class="container"><img src="~/StoreImages/StoreIcons/OnlineShopIcon1.jpg" class="img-responsive" style="position:absolute" height="250" ; width="250" /></div>
+            </div>*@
 
         </div>
+
     </nav>
 
 
-    
+
+
+
+
+
     <div class="container body-content">
         @RenderBody()
         <hr />
 
-        @*<footer class="container-fluid text-center">
-            <p>Shopping Express LLC</p>
+
+        @*<style>
+                p.ex1 {
+                    border: 1px solid red;
+                    padding-bottom: 10%;
+                }
+            </style>*@
+        <footer style="background-color: transparent; padding-bottom: 0%">
+            <p>&copy; @DateTime.Now.Year - Shopping Express</p>
             <form class="form-inline">
                 Get deals:
                 <input type="email" class="form-control" size="50" placeholder="Email Address">
                 <button type="button" class="btn btn-danger">Sign Up</button>
             </form>
-        </footer>*@
+        </footer>
         @*<footer style="background-color: transparent; text-align:center; padding-bottom: unset" >
-            <p>&copy; @DateTime.Now.Year - Shopping Express</p>
-        </footer>*@
+                <p>&copy; @DateTime.Now.Year - Shopping Express</p>
+            </footer>*@
     </div>
-    
+
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
@@ -111,6 +124,5 @@
 
 </body>
 </html>
-
 
 
