@@ -10,23 +10,29 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
         <style >
-        /* Remove the navbar's default rounded borders and increase the bottom margin */
-        .navbar {
-            margin-bottom: 50px;
-            border-radius: 0;
-        }
+    body {
+        font-family: Arial;
+        font-size: 17px;
+        padding: 8px;
+    }
+    /* Remove the navbar's default rounded borders and increase the bottom margin */
+    .navbar {
+        margin-bottom: 50px;
+        border-radius: 0;
+    }
 
-        /* Remove the jumbotron's default bottom margin */
-        .jumbotron {
-            margin-bottom: 0;
-        }
+    /* Remove the jumbotron's default bottom margin */
+    .jumbotron {
+        margin-bottom: 0;
+    }
 
-        /* Add a gray background color and some padding to the footer */
-        footer {
-            background-color: #f2f2f2;
-            padding: 0px;
-        }
-    </style>
+    /* Add a gray background color and some padding to the footer */
+    footer {
+        background-color: #f2f2f2;
+        padding: 0px;
+    }
+
+  </style>
 </head>
 <body>
     <nav class="navbar navbar-inverse">
@@ -41,7 +47,8 @@
 
             </div>
 
-            <div class="collapse navbar-collapse fixed-top" style="background-color:black; position: absolute;" id="myNavbar">
+            <div class="collapse navbar-collapse fixed-top" style="        background-color: black;
+        position: absolute;" id="myNavbar">
 
                 <ul class="nav navbar-nav navbar-expand-sm">
                     <li class="dropdown">
@@ -66,45 +73,28 @@
                         <li>@Html.ActionLink("Deals", "Deals", "Home")</li>
                         <li>@Html.ActionLink("Stores", "Stores", "Home")</li>
                         <li>@Html.ActionLink("Contact Us", "ContactUs", "Home")</li>
+                        <li>@Html.ActionLink("Register", "Register", "Home")</li>
+
                     </ul>
+
                 </ul>
                 <ul class="nav navbar-nav navbar-right navbar-expand-sm">
-                    <div class="topnav" style="padding-top: 10px">
+                    <li class="topnav" style="        padding-top: 10px">
                         <input type="text" placeholder="Search..">
-                    </div>
-                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+                    </li>
+                    <li>@Html.ActionLink("Your Account", "YourAccount", "Home")</li>
+                    <li>@Html.ActionLink("Shopping Cart", "ShoppingCart", "Home")</li>
+
                 </ul>
-
-
             </div>
-
-            @*<div class="container text-center" style="position:center; padding-bottom: 15%">
-                <div class="container"><img src="~/StoreImages/StoreIcons/OnlineShopIcon1.jpg" class="img-responsive" style="position:absolute" height="250" ; width="250" /></div>
-            </div>*@
-
         </div>
-
     </nav>
-
-
-
-
-
-
-
     <div class="container body-content">
         @RenderBody()
         <hr />
 
-
-        @*<style>
-                p.ex1 {
-                    border: 1px solid red;
-                    padding-bottom: 10%;
-                }
-            </style>*@
-        <footer style="background-color: transparent; padding-bottom: 0%">
+        <footer style="        background-color: transparent;
+        padding-bottom: 0%">
             <p>&copy; @DateTime.Now.Year - Shopping Express</p>
             <form class="form-inline">
                 Get deals:
@@ -112,9 +102,7 @@
                 <button type="button" class="btn btn-danger">Sign Up</button>
             </form>
         </footer>
-        @*<footer style="background-color: transparent; text-align:center; padding-bottom: unset" >
-                <p>&copy; @DateTime.Now.Year - Shopping Express</p>
-            </footer>*@
+
     </div>
 
 

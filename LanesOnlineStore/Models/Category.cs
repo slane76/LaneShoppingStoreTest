@@ -10,7 +10,7 @@ namespace LanesOnlineStore.Models
         public string CategoryID { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public List<Item> Items { get; set; }
+        //public List<Item> Items { get; set; }
 
     }
 }

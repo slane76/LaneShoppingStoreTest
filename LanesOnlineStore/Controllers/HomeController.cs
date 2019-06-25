@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-using LanesOnlineStore.Models;
+﻿using System.Web.Mvc;
 
 namespace LanesOnlineStore.Controllers
 {
@@ -73,5 +68,22 @@ namespace LanesOnlineStore.Controllers
         {
             return View();
         }
+
+        public ActionResult YourAccount()
+        {
+            return View();
+        }
+
+        public ActionResult ShoppingCart()
+        {
+            return View();
+        }
+
+        public ActionResult Register()
+        {
+            return View();
+        }
+
+
     }
 }

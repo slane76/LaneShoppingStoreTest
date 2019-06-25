@@ -5,7 +5,7 @@ using System.Web;
 
 namespace LanesOnlineStore.Models
 {
-    public class Customer
+    public class CustomerData
     {
         public int CustomerID { get; set; }
         public string FirstName { get; set; }
@@ -18,8 +18,5 @@ namespace LanesOnlineStore.Models
         public string Country { get; set; }
         public string PostalCode { get; set; }
         public string EmailAddress { get; set; }
-
-
-
     }
 }
